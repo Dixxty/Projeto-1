@@ -1,0 +1,648 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --Montserrat: 'Montserrat', sans-serif;
+    --Rubik: 'Rubik', sans-serif;
+    --OpenSans: 'Open Sans', sans-serif;
+    --roxo: #D443DF;
+    --cinza: #808080;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(#B37BEC, #5CDFED) ;
+    height: 668px;
+}
+
+header h1 {
+    font-family: var(--Rubik);
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+    line-height: 48px;
+}
+
+header p {
+    color: white;
+    font-family: var(--OpenSans);
+}
+
+@media (max-width: 376px) {
+
+    header {
+        height: 882px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        line-height: 32px;
+        padding-top: 62px;
+        text-align: center;
+    }
+
+    header p {
+        margin: 20px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    header button {
+        border: none;
+        background-color: white;
+        border-radius: 30px;
+        padding: 15px 35px;
+        font-family: var(--OpenSans);
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #24D4E5;
+        display: block;
+        margin: auto;
+    }
+
+    header button:hover {
+        cursor: pointer;
+        color: #B37BEC;
+    }
+
+    header .sphere_form {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: #C4BEF4;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    .topic_section h1 {
+        color: var(--roxo);
+        font-family: var(--Montserrat);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.4em;
+        line-height: 24px;
+        margin-top: 40px;
+    }
+
+    .topic_section h2 {
+        font-family: var(--Montserrat);
+        font-size: 1.1em;
+        color: var(--roxo);
+        letter-spacing: 2px;
+    }
+
+    .topic_section p {
+        font-family: var(--OpenSans);
+        color: var(--cinza);
+    }
+
+    .topic_section .strategy {
+        margin: 200px 40px;
+    }
+
+    .topic_section .cube_form {
+        width: 110px;
+        position: absolute;
+        top: 1050px;
+        left: 37px
+    }
+
+    .topic_section .strategy_p {
+        margin: -170px 37px;
+    }
+
+    .topic_section .branding {
+        margin: 300px 40px;
+    }
+
+    .topic_section .sphere_form {
+        width: 110px;
+        position: absolute;
+        top: 1330px;
+        left: 37px
+    }
+    
+    .topic_section .branding_p {
+        margin: -270px 37px;
+    }
+
+    .topic_section .design {
+        margin: 400px 40px;
+    }
+
+    .topic_section .triangle_form {
+        width: 110px;
+        position: absolute;
+        top: 1635px;
+        left: 37px
+    }
+
+    .topic_section .design_p {
+        margin: -370px 37px;
+    }
+
+    .topic_section .marketing {
+        margin: 500px 40px;
+    }
+
+    .topic_section .donut_form {
+        width: 110px;
+        position: absolute;
+        top: 1915px;
+        left: 37px
+    }
+
+    .topic_section .marketing_p {
+        margin: -470px 37px;
+    }
+
+    .rectangle_form {
+        background-image: linear-gradient(#ECBFF9, #5DE0ED);
+        height: 730px;
+        width: 190px;
+        display: flex;
+        margin: auto;
+        margin-top: -715px;
+        
+    }
+
+    .good_design h1 {
+        margin: 560px 0px 0px 37px;
+        font-family: var(--Montserrat);
+        font-size: 2em;
+        font-weight: 700;
+        color: #702BB1;
+    }
+
+    .good_design p {
+        margin: 30px 37px ;
+        line-height: 30px;
+        color: rgb(66, 60, 60);
+        font-family: var(--OpenSans);
+    }
+
+    .good_design button {
+        border: none;
+        background-image: linear-gradient(#29CCE6,#CC68F0);
+        border-radius: 30px;
+        padding: 15px 35px;
+        font-family: var(--OpenSans);
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-left: 30px;
+        color: white;
+        transition: transform 0.3s ease;
+    }
+
+    .good_design button:hover {
+        cursor: pointer;
+        color: #e4f1f3;
+    }
+
+    .good_design .cone_form {
+        width: 340px;
+        margin-top: 60px;
+    }
+
+    .prism_form {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .prism_p {
+        font-family: var(--Montserrat);
+        color: black;
+        font-size: 1.4em;
+        margin: 70px 30px; 
+        line-height: 40px; 
+        font-weight: 900;  
+    }
+
+    .prism_p2 {
+        margin: 70px 30px;
+        line-height: 25px;
+        font-family: var(--OpenSans);
+    }
+
+    .prism_p3 {
+        margin: -50px 30px;
+        color: black;
+        font-weight: 700;
+        line-height: 25px;
+        font-family: var(--OpenSans);
+    }
+
+    .prism_section span {
+        width:150px;
+        height: 150px;
+        border-radius: 100%;
+        background-image: linear-gradient(#B37BEC,#5CDFED);
+        display: block;
+        margin: 100px 25px;
+    }
+
+    .check_signal {
+        width: 16px;
+        margin: -50px 45px;
+        display: block;
+    }
+
+    .check_signal_p {
+        margin: 32px 0px 0px 70px;
+        font-family: var(--OpenSans);
+    }
+
+    .check_signal2 {
+        width: 16px;
+        margin: 30px 0px 0px 45px;
+       display: flex;
+    }
+
+    .check_signal_p2 {
+        margin: -19px 45px 0px 70px;
+        font-family: var(--OpenSans);
+    }
+
+    .check_signal3 {
+        width: 16px;
+        margin: 30px 45px;
+       display: flex;
+    }
+
+    .check_signal_p3 {
+        margin: -50px 45px 0px 70px;
+        font-family: var(--OpenSans);
+    }
+
+    .check_signal4 {
+        width: 16px;
+        margin: 30px 45px;
+       display: flex;
+    }
+
+    .check_signal_p4 {
+        margin: -50px 45px 0px 70px;
+        font-family: var(--OpenSans);
+    }
+
+    .check_signal5 {
+        width: 16px;
+        margin: 30px 45px;
+       display: flex;
+    }
+
+    .check_signal_p5 {
+        margin: -50px 45px 0px 70px;
+        font-family: var(--OpenSans);
+    }
+
+    .company_statistics_img1 {
+        width: 150px;
+        margin: 80px 40px;
+    }
+
+    .company_statistics_img2 {
+        width: 120px;
+        margin: -170px 0px 0px 220px;
+
+    }
+    .company_statistics_img3 {
+        width: 250px;
+        margin: 530px -240px;
+        z-index: 1;
+        position: absolute;
+    }
+    
+    .card_statistics {
+        width: 233px;
+        height: 147px;
+        background-color: #24D4E5;
+        display: flex;
+        box-shadow: 1px 1px 27px rgb(196, 189, 189);
+        border-radius: 15px;
+        margin: -90px 30px;
+        position: absolute;
+        font-family: var(--OpenSans);
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #583B72;
+        background-color: white;
+        position: relative;
+        margin-bottom: 130px;
+        z-index: 2;
+    }
+
+    .card_statistics h1 {
+        font-family: var(--OpenSans);
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #583B72;
+        font-size: 1em;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 20px;
+    }
+
+    .card_statistics p {
+        font-family: var(--Montserrat);
+        font-size: 3em;
+        font-weight: 700;
+        color: #24D4E5;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 70px;
+    }
+
+    .statistics_form {
+        width: 290px;
+        display: flex;
+        margin: -370px 50px;
+    }
+
+    .sphere_form_statistics {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        border-radius: 100%;
+        background-image: linear-gradient(#CEB3F4,#5FDFED);
+        margin: 480px 20px;
+    }
+
+    .company_benefits_img1 {
+        width: 200px;
+        position: absolute;
+        top: 6400px;
+        left: 20px;
+    }
+
+    .company_benefits_img2 {
+        width: 200px;
+        position: absolute;
+        top: 6530px;
+        left: 150px;
+    }
+
+    .card_benefits {
+        position: relative;
+        width: 282px;
+        height: 325px;
+        background-color: #ffffff;
+        display: flex;
+        margin: -210px 30px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px rgb(194, 186, 186);
+        z-index: 1;
+        margin-bottom: 240px;
+    }
+
+    .company_benefits_img3 {
+        width: 100px;
+        position: absolute;
+        top: 7580px;
+        left: 240px;
+        z-index: 1;
+    }
+
+    .company_benefits_waveform {
+        width: 1800px;
+        position: absolute;
+        top: 6730px;
+        left: -720px;
+        
+    }
+
+    .sphere_form_card_benefits {
+        display: flex;
+        background-image: linear-gradient(#c66cf1,#24cfe6);
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin: 20px 30px;
+    }
+
+    .card_benefits i {
+        color: white;
+        margin: 43px -108px;
+        font-size: 3.6em;
+    }
+
+    .card_benefits h1 {
+        font-family: var(--Montserrat);
+        font-size: 1.5em;
+        font-weight: 500;
+        color: var(--cinza);
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        color: black;
+    }
+
+    .card_benefits p {
+        font-family: var(--OpenSans);
+        color: var(--cinza);
+        position: absolute;
+        top: 180px;
+        left: 30px;
+        right: 30px;  
+    }
+
+    .company_info h1 {
+        font-family: var(--Montserrat);
+        font-size: 1.4em;
+        font-weight: 800;
+        color: #752bb1;
+        position: absolute;
+        top: 7810px;
+        left: 30px;
+
+    }
+
+    .company_info p {
+        font-family: var(--OpenSans);
+        position: absolute;
+        top: 7870px;
+        left: 30px;
+        margin-right: 20px;
+    }
+
+    .company_info hr {
+        position: relative;
+        top: 235px;
+        width: 300px;
+        left: 30px;
+    }
+
+    .location h2 {
+        font-family: var(--Montserrat);
+        font-size: 1.2em;
+        position: absolute;
+        top: 8130px;
+        left: 90px;
+        font-weight: 00;
+    }
+
+    .location i {
+        font-size: 2.3em;
+        color: #FE7E62;
+        position: absolute;
+        top: 8130px;
+        left: 40px;
+    }
+
+    .location p {
+        font-family: var(--OpenSans);
+        position: absolute;
+        top: 8170px;
+        left: 90px;
+        margin-right: 60px;
+    }
+
+    .phone h2 {
+        font-family: var(--Montserrat);
+        font-size: 1.2em;
+        position: absolute;
+        top: 8260px;
+        left: 90px;
+    }
+
+    .phone i {
+        font-size: 2em;
+        color: #FE7E62;
+        position: absolute;
+        top: 8260px;
+        left: 40px;
+    }
+
+    .phone p {
+        font-family: var(--OpenSans);
+        position: absolute;
+        top: 8295px;
+        left: 92px;
+        margin-right: 60px;
+    }
+
+    form {
+        position: absolute;
+        top: 8400px;
+        left: 12px;
+        background-color: #F2F2F2;
+        padding: 60px 70px;
+        border-radius: 30px;
+    }
+
+    form h1 {
+        font-family: var(--Montserrat);
+        font-size: 1.4em;
+        font-weight: 600;
+        margin-right: -80px;
+        position: absolute;
+        top: 40px;
+        left: 35px;
+    }
+
+    form h2 {
+        margin: 40px 0px 5px -50px;
+        font-family: var(--Montserrat);
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    .input_name, .input_email {
+        border: none;
+        border-radius: 10px;
+        width: 290px;
+        height: 40px;
+        margin: 0px -52px;
+        outline: none;
+        padding: 25px 10px; 
+        font-size: 1em;
+        font-weight: 400;
+        font-family: var(--OpenSans);
+    }
+
+    .input_checkbox {
+        position: absolute;
+        top: 520px;
+        left: 30px;
+    }
+
+    form h3{
+        font-size: 1em;
+        font-weight: 400;
+        font-family: var(--OpenSans);
+        margin: 10px -19px;
+    }
+
+    ::placeholder {
+        color: rgb(192, 182, 182);
+    }
+
+    textarea {
+        border: none;
+        border-radius: 10px;
+        margin: 0px -50px;
+        outline: none;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: 400;
+        font-family: var(--OpenSans);
+        height: 150px;
+        resize: none;
+    }
+
+    form button {
+        padding: 15px 70px;
+        margin: 10px -46px;
+        border-radius: 20px;
+        border: none;
+        background: linear-gradient(#33C5E6,#C56DF0);
+        color: white;
+        font-family: var(--Montserrat);
+        font-weight: 700;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        
+    }
+}
+
+@media (min-width: 1440px) {
+
+}
+
+@media (min-width: 1680px) {
+
+   
+}
+
+@media (min-width: 1920px) {
+
+    
+}
